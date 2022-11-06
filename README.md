@@ -1,4 +1,4 @@
-#clima-hoje.
+#CLIMA-HOJE
 
 O projeto é uma aplicação para verificação de clima de qualquer cidade do mundo.
 
