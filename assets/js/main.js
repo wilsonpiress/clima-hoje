@@ -1,3 +1,6 @@
+// Chave da API  OPEN WEATHER
+const apiKey = "";
+
 // Variáveis e seleção de elementos
 
 const apiCountryURL = "https://countryflagsapi.com/png/";
@@ -12,6 +15,8 @@ const weatherIconElement = document.querySelector("#weather-icon");
 const countryElement = document.querySelector("#country");
 const humidityElement = document.querySelector("#humidity span");
 const windElement = document.querySelector("#wind span");
+
+const weatherContainer = document.querySelector("#weather-data");
 
 // Funções
 const getWeatherData = async (city) => {
@@ -34,6 +39,8 @@ const showWeatherData = async (city) => {
     countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     humidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;
+
+    weatherContainer.classList.remove("hide");
 };
 
 // Eventos
@@ -45,3 +52,11 @@ searchBtn.addEventListener("click", (e) =>{
 
     showWeatherData(city);
 });
+
+cityInput.addEventListener("keyup", (e) => {
+    if (e.code === "Enter") {
+        const city = e.target.value;
+
+        showWeatherData(city);
+    }
+})
