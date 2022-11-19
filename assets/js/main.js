@@ -1,5 +1,5 @@
 // Chave da API  OPEN WEATHER
-const apiKey = "";
+const apiKey = "1eacca6841961db51a2ef9483220250b";
 
 // Variáveis e seleção de elementos
 
