@@ -5,6 +5,8 @@ O projeto é uma aplicação para verificação de clima de qualquer cidade do m
 Utilizei tecnologias como:
 HTML, CSS, JavaScript e integrei a API Open Weather para trazer os detalhes e as informações dos diferentes climas das cidades do mundo em tempo real, integrei também a API Country Flags para trazer os icones das bandeiras de cada país das cidades pesquisadas, ambas trabalhando em conjunto.
 
+Link para acessar o projeto: https://subtle-cupcake-7664fe.netlify.app/
+
 Segue abaixo imagens do projeto:
 
 ![clima6](https://user-images.githubusercontent.com/107739313/201546129-f6065fd6-8a98-4478-894e-686c30442853.png)
